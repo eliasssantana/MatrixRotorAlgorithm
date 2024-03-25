@@ -1,10 +1,11 @@
 package org.example;
 
 import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 public class MatrixUtils {
     @Contract(pure = true)
-    public static void rotate(int[][] matrix){
+    public static void rotate(int[] @NotNull [] matrix){
         int n = matrix.length;
         if (n <= 1) return;
 
