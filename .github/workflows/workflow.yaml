@@ -1,9 +1,6 @@
 name: Continuos Integration
 
-on:
-  push:
-    branches:
-      - feat/add-github-actions
+on: pull_request
 
 jobs:
   continuos-integration:
